@@ -1,0 +1,23 @@
+name: 'github-regex-extract-action'
+description: 'Extract matches from a text using regex'
+author: 'Tjitse-E'
+runs:
+    using: 'node12'
+    main: 'dist/index.js'
+inputs:
+    pattern:
+        description: The regex patteren
+        required: true
+        default: '[A-Z]{2,5}-[0-9]{1,5}'
+    pattern_flags:
+        description: The flags that is used for the regex
+        required: true
+        default: 'gm'
+    input_text:
+        description: The text that will be searched.
+        required: true
+outputs:
+    matches:
+        description: "A newline seperated list of matches"
+
+
