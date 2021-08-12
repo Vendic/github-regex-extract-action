@@ -588,7 +588,7 @@ const run = async () => {
         const pattern = new RegExp(input_pattern, pattern_flags);
         const input_text = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput('text');
         const matches = input_text.match(pattern);
-        if (matches.length === 0) {
+        if (matches === null || matches.length === 0) {
             _actions_core__WEBPACK_IMPORTED_MODULE_0__.info('No matches found');
             return;
         }

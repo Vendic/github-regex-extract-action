@@ -8,7 +8,7 @@ const run = async (): Promise<void> => {
         const input_text = core.getInput('text')
         const matches : any = input_text.match(pattern)
 
-        if (matches.length === 0) {
+        if (matches === null || matches.length === 0) {
             core.info('No matches found')
             return;
         }
