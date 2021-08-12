@@ -1,6 +1,5 @@
 {
     "name": "github-regex-extract-action",
-    "version": "1.0.0",
     "description": "Change your task status in Clickup",
     "main": "extract.ts",
     "scripts": {
