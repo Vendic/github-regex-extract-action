@@ -13,7 +13,7 @@ inputs:
         description: The flags that is used for the regex
         required: true
         default: 'gm'
-    input_text:
+    text:
         description: The text that will be searched.
         required: true
 outputs:
